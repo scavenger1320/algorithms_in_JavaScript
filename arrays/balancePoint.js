@@ -16,7 +16,7 @@ function balancePoint(arr){
 				rightSum += arr[i];
 			}
 			// the above if/else can be written in ternary also
-			// i<rightSum ? leftSum+=arr[i]:rightSum+=arr[i];
+			// i<rightStart ? leftSum+=arr[i]:rightSum+=arr[i];
 		}
 		if(leftSum == rightSum){ // we've added up all the values, now check the sums
 			return true; // if the sums equal then we have a balance point
