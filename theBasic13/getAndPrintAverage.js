@@ -5,12 +5,10 @@
 function average(arr){
   var len = arr.length;
   var sum = 0
-  var count = 0;
   for (var i=0; i<len; i++){
     sum += arr[i];
-    count++;
   }
-  console.log(sum/count);
+  console.log(sum/len);
 }
 
 // test cases
