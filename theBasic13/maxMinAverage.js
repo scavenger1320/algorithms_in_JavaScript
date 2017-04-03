@@ -6,8 +6,7 @@ function maxMinAverage(arr){
   var len = arr.length;
   var max = arr[0];
   var min = arr[0];
-  var sum = 0
-  var count = 0;
+  var sum = 0;
   for (var i=0; i<len; i++){
     if (min > arr[i]){
       min = arr[i];
@@ -15,10 +14,8 @@ function maxMinAverage(arr){
     if (max < arr[i]){
       max = arr[i];
     }
-    sum += arr[i];
-    count++;
-  }
-  console.log(max, min, sum/count);
+    sum += arr[i];  }
+  console.log(max, min, sum/len);
 }
 
 // test cases
