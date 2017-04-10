@@ -41,7 +41,7 @@ BST.prototype.add = function(value){ // function takes in a value that will be u
 	}
 }
 
-module.exports = BST; // this allows us to export this file to other files for them to use
+module.exports = BST; // this allows us to export the BST class to other files for them to use
 // we'll need the BST and BSTNode definition as well as the add function to create our test cases
 // in other binary search tree files
 
