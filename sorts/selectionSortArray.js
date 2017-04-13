@@ -1,4 +1,4 @@
-// write standalone functions implementing selection sort for arrays
+// write a standalone function implementing selection sort for arrays
 function arraySelectionSort(arr){ // pass in the array to be sorted
 	var len = arr.length; // store the length of the array in a variable to use later
 	var min; // declare our min variable that we'll use to select the minimum value through each pass of the array
