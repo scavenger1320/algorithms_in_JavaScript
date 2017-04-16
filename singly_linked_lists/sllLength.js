@@ -14,7 +14,7 @@ SLL.prototype.length = function(){
 
 
 
-// test cases for singly linked list bubble sort
+// test cases
 var testSll = new SLL(); // create our new empty list
 console.log(testSll);
 console.log(testSll.length());
