@@ -19,7 +19,7 @@ function intersectMultisets(mset1, mset2){
 		}
 		idx1++; // increment the index for the first multiset
 	} // at this point we've completely gone through at least one of the multisets so there can't be anymore intersecting values
-	return mset3; // so return the intersected set
+	return mset3; // so return the intersected multiset
 }
 
 // test cases
