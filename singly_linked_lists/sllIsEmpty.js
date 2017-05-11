@@ -1,5 +1,5 @@
-var SLL = require("../singly_linked_lists/sllAdd.js"); // we need this file to access our singly linked list class definition
-// and it's functions to create a random list and add nodes
+'use strict';
+var SLL = require("./index.js"); // we need this file to access our singly linked list class along with the randomList and add methods
 
 // function that returns true/false if a list is empty
 SLL.prototype.isEmpty = function(){

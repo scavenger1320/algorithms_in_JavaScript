@@ -1,5 +1,5 @@
-var SLL = require("../singly_linked_lists/sllAdd.js"); // we need this file to access our singly linked list class definition
-// and it's functions to create a random list
+'use strict';
+var SLL = require("./index.js"); // we need this file to access our singly linked list class along with the randomList and add methods
 
 // function that removes and returns the node at the back (end) of the list
 SLL.prototype.removeBack = function(){
@@ -29,6 +29,6 @@ SLL.prototype.removeBack = function(){
 var testSll = new SLL(); // create our new empty list
 console.log(testSll.removeBack()); // => null
 testSll.addFront(33).addFront(5).addFront(7); // add some nodes into the list
-console.log(testSll.removeBack()); // => node with value 7
+console.log(testSll.removeBack()); // => node with value 33
 testSll.addFront(22); // add another node
-console.log(testSll.removeBack()); // => node with value 22
+console.log(testSll.removeBack()); // => node with value 5
