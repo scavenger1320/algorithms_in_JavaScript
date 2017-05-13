@@ -1,5 +1,4 @@
 'use strict';
-
 var SLLNode = require("./sllNode.js"); // we need this file to access our sll node class so that we can create a new node
 
 module.exports = function(SLL){ // these methods will be exported so they can be used in other files, mainly the index.js file
@@ -17,6 +16,7 @@ module.exports = function(SLL){ // these methods will be exported so they can be
 			current = current.next; // move current forward one node each iteration of the loop
 		}
 		current.next = nodeToAdd; // current will be the last node at this point because of the previous loop so just set it's .next to the new node
+		return this; // return this (the list itself) will allow us to chain this method
 	}
 
 	// create a function that adds a new node into an existing SLL at the front of the list
