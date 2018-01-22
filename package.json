@@ -1,0 +1,23 @@
+{
+  "name": "algorithms_in_JavaScript",
+  "version": "1.0.0",
+  "description": "A collection of algorithms completed with JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisulanowicz/algorithms_in_JavaScript.git"
+  },
+  "keywords": [],
+  "author": "Chris Ulanowicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisulanowicz/algorithms_in_JavaScript/issues"
+  },
+  "homepage": "https://github.com/chrisulanowicz/algorithms_in_JavaScript#readme",
+  "devDependencies": {
+    "mocha": "^5.0.0"
+  }
+}
