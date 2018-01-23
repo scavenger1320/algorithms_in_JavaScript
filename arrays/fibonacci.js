@@ -28,14 +28,11 @@ function fibonacci2(num){
 	return fib2; // so return it
 }
 
-// test cases  ex. fib sequence [0,1,1,2,3,5,8,13,21,34]
-console.log(fibonacci(0));
-console.log(fibonacci(2));
-console.log(fibonacci(3));
-console.log(fibonacci(5));
-console.log(fibonacci(6));
-console.log(fibonacci2(0));
-console.log(fibonacci2(2));
-console.log(fibonacci2(3));
-console.log(fibonacci2(5));
-console.log(fibonacci2(6));
+
+// ======================================================================
+// Code below exports this file for Mocha testing
+if (typeof exports !== 'undefined') {
+	exports.fibonacci = fibonacci;
+	exports.fibonacci2 = fibonacci2;
+}
+
