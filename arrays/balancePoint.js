@@ -31,21 +31,12 @@ function balancePoint(arr){
 }
 
 
-// test cases
-var testArr = [1,2,3,4,10]; // -> true (1+2+3+4 =10 / 10)
-var testArr2 = []; // should this return true or false? Good question to ask
-// an interviewer since technically it does balance out
-// however, the question asks for a balance point BETWEEN indices
-// since there's no indices to be between, then this should probably return false
-// remove the '&& len' in the while condition to make it return true for this case
-var testArr3 = [1,2,3,20]; // -> false
-var testArr4 = [-4,20,3,5,8]; // -> true (-4+20 = 16 / 3+5+8 = 16)
-var testArr5 = [11,1,2,3,5]; // -> true (11 / 1+2+3+5 = 11)
-console.log("testArr is", balancePoint(testArr));
-console.log("testArr2 is", balancePoint(testArr2));
-console.log("testArr3 is", balancePoint(testArr3));
-console.log("testArr4 is", balancePoint(testArr4));
-console.log("testArr5 is", balancePoint(testArr5));
+
+// ======================================================================
+// Code below exports this file for Mocha testing
+if (typeof exports !== 'undefined') {
+	exports.balancePoint = balancePoint;
+}
 
 
 
