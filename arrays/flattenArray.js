@@ -38,7 +38,12 @@ function flattenArrSame(arr){
 	return arr; // and return the original array that has now been flattened
 }
 
-// test cases
-var testArr = [1,[2,3],4,[5],[6,7,8],[]]; //should output [1,2,3,4,5,6,7,8]
-console.log(flattenArrNew(testArr));
-console.log(flattenArrSame(testArr));
+
+
+
+// ======================================================================
+// Code below exports this file for Mocha testing
+if (typeof exports !== 'undefined') {
+	exports.flattenArrNew = flattenArrNew;
+	exports.flattenArrSame = flattenArrSame;
+}
