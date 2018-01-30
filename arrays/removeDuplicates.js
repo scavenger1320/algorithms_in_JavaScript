@@ -53,12 +53,11 @@ function dedupeOneLoop(arr){
 	return arr;
 }
 
-// test cases
-var testArr = [1,2,3,1,5,2,2,4,3];
-var testArr2 = [1,1,1,1,6,2,2,3,3,5,5,4,2,4,2,1]
-console.log(dedupeNew(testArr));
-console.log(dedupeSame(testArr));
-console.log(dedupeOneLoop(testArr2));
 
-
-
+// ======================================================================
+// Code below exports this file for Mocha testing
+if (typeof exports !== 'undefined') {
+	exports.dedupeNew = dedupeNew;
+	exports.dedupeSame = dedupeSame;
+	exports.dedupeOneLoop = dedupeOneLoop
+}
