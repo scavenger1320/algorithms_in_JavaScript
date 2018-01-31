@@ -59,5 +59,5 @@ function dedupeOneLoop(arr){
 if (typeof exports !== 'undefined') {
 	exports.dedupeNew = dedupeNew;
 	exports.dedupeSame = dedupeSame;
-	exports.dedupeOneLoop = dedupeOneLoop
+	exports.dedupeOneLoop = dedupeOneLoop;
 }

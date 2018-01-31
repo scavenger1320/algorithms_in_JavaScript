@@ -21,11 +21,9 @@ function rBinarySearch(arr,val,start,end){
 	//  forward progress is made by passing in the adjusted 'bookends'
 }
 
-// test cases
-var testArr = [2,4,6,8,10];
-console.log(rBinarySearch(testArr, 6));
-console.log(rBinarySearch(testArr, 2));
-console.log(rBinarySearch(testArr, 10));
-console.log(rBinarySearch(testArr, 7));
-console.log(rBinarySearch(testArr, 1));
-console.log(rBinarySearch(testArr, 22));
+
+// ======================================================================
+// Code below exports this file for Mocha testing
+if (typeof exports !== 'undefined') {
+	exports.rBinarySearch = rBinarySearch;
+}
