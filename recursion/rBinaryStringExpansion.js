@@ -17,8 +17,8 @@ function binaryStringExpansion(str,arr){ // we need to pass in the array as we b
 	return arr;
 }
 
-// test cases
-console.log(binaryStringExpansion('01?'));
-console.log(binaryStringExpansion('01??'));
-console.log(binaryStringExpansion('???'));
-console.log(binaryStringExpansion('01'));
+// ======================================================================
+// Code below exports this file for Mocha testing
+if (typeof exports !== 'undefined') {
+	exports.rBinaryStringExpansion = binaryStringExpansion;
+}
