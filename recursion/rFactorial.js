@@ -7,10 +7,8 @@ function rFactorial(num){
 }
 
 
-// test cases
-var fac = rFactorial(1);
-console.log(fac);
-var fac2 = rFactorial(3);
-console.log(fac2);
-var fac3 = rFactorial(6);
-console.log(fac3);
+// ======================================================================
+// Code below exports this functions for Mocha testing
+if( typeof exports !== 'undefined') {
+	exports.rFactorial = rFactorial;
+}
