@@ -11,5 +11,8 @@ function rSigma(num){
 	}
 }
 
-// test cases
-console.log(rSigma(5));  // this tests the function above
+// ======================================================================
+// Code below exports this functions for Mocha testing
+if (typeof exports !== 'undefined') {
+	exports.rSigma = rSigma;
+}
