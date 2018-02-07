@@ -14,12 +14,9 @@ function rtribonacci(num){
 // sequence follows standard array indexing so tribonacci of 0 is the first value
 // [0,0,1,1,2,4,7,13,24,44]
 
-//test cases
-var trib = rtribonacci(0); // => 0
-console.log(trib);
-var trib2 = rtribonacci(3); // =>1
-console.log(trib2);
-var trib3 = rtribonacci(5); // => 4
-console.log(trib3)
-var trib4 = rtribonacci(8); // => 24
-console.log(trib4);
+
+// ======================================================================
+// Code below exports this functions for Mocha testing
+if (typeof exports !== 'undefined') {
+	exports.rTribonacci = rtribonacci;
+}
