@@ -15,9 +15,22 @@ function arrayBubbleSort(arr){ // pass in the array to be sorted
 	return arr;
 }
 
-// test cases for array bubble sort
-console.log(arrayBubbleSort([8,3,2,6,1,9])); // => [ 1, 2, 3, 6, 8, 9 ]
-console.log(arrayBubbleSort([1,2,3,4,5,6])); // => [ 1, 2, 3, 4, 5, 6 ]
-console.log(arrayBubbleSort([6,5,4,3,2,1])); // => [ 1, 2, 3, 4, 5, 6 ]
-console.log(arrayBubbleSort([])); // => []
-console.log(arrayBubbleSort([8])); // => [ 8 ]
+//es6ified
+// function arrayBubbleSort(arr) {
+// 	let len = arr.length;
+// 	while (len != 0) {
+// 		for (let i = 0; i < len; i++) {
+// 			if (arr[i] > arr[i+1]) {
+// 				[arr[i], arr[i+1]] = [arr[i+1], arr[i]];
+// 			}
+// 		}
+// 		len--;
+// 	}
+// 	return arr;
+// }
+
+// ======================================================================
+// Code below exports this functions for Mocha testing
+if (typeof exports !== 'undefined') {
+	exports.bubbleSort = arrayBubbleSort;
+}
